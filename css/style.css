@@ -1,0 +1,206 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Barre de navigation */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header (en-tête) */
+header {
+    background-color: #007bff; /* Couleur primaire (bleu) */
+    color: white;
+    padding: 50px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Section principale */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    color: #007bff; /* Accent sur les titres */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Section Objectifs et Apprentissages */
+.objectifs-apprentissages {
+    background-color: #f8f9fa; /* Fond gris clair */
+    color: #333;
+    padding: 50px 0;
+}
+
+.objectifs-apprentissages h2 {
+    font-size: 2rem;
+    color: #007bff; /* Bleu pour les titres */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.objectifs-apprentissages p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+}
+
+.objectifs-apprentissages .row .col-md-4 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.objectifs-apprentissages .row .col-md-4 p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.objectifs-apprentissages ul {
+    list-style: none; /* Pas de puces */
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.objectifs-apprentissages ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Styles pour les cartes (encadrés) */
+.card {
+    border: 1px solid #007bff;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+/* Liens */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Menu déroulant */
+.dropdown-menu {
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Flexbox pour aligner l'image et le texte */
+.flex-container {
+    display: flex;
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    margin-top: 20px;
+}
+
+/* Image réduite */
+.img-small {
+    max-width: 540px; /* Taille maximale de l'image */
+    height: auto; /* Conserve les proportions */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Carte pour le texte */
+.card {
+    border: 1px solid #007bff;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    flex: 1; /* Le texte occupe l'espace restant */
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+/* Responsive (petits écrans) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .objectifs-apprentissages h2 {
+        font-size: 1.8rem;
+    }
+
+    .objectifs-apprentissages p {
+        font-size: 1rem;
+    }
+
+    /* Empilement des éléments pour petits écrans */
+    .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .img-small {
+        margin-bottom: 15px; /* Espace entre l'image et le texte */
+    }
+}

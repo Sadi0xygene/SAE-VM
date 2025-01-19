@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concepts et Choix - Projet SAE</title>
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+<!-- Barre de navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">Projet SAE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <!-- Menu Installation -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="installationMenu" role="button" data-bs-toggle="dropdown">
+            Installation d'une VM
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="concept.html">Concepts et choix</a></li>
+            <li><a class="dropdown-item" href="configurationVM.html">Commandes</a></li>
+            <li><a class="dropdown-item" href="utilisateurs.html">Utilisateurs et Prompts</a></li>
+          </ul>
+        </li>
+        <!-- Menu Configuration site web -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="configurationMenu" role="button" data-bs-toggle="dropdown">
+            Configuration du site web
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../Configuration/serveurs.html">Configuration serveur</a></li>
+            <li><a class="dropdown-item" href="../Configuration/developpement.html">Développement et outils</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Contenu principal -->
+<main class="container mt-5">
+  <h1 class="text-center mb-4">Concepts et Choix</h1>
+
+  <!-- Section 1 : Réglage de la machine virtuelle -->
+  <section>
+    <h2>Réglage de la machine virtuelle</h2>
+    <p>
+      Lors de la configuration de la machine virtuelle, nous avons choisi une mémoire vive de 4 Go et attribué 4 cœurs de processeur.
+      Ces réglages permettent d'assurer de bonnes performances pour le système d'exploitation installé (Ubuntu).
+    </p>
+    <ul>
+      <li><strong>4 Go de RAM</strong> : suffisants pour exécuter Ubuntu et effectuer des tâches simultanément.</li>
+      <li><strong>4 cœurs</strong> : pour exploiter au mieux les performances du matériel.</li>
+    </ul>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="../img/Capture d'écran 2025-01-19 040006.png" alt="Configuration des ressources de la VM" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <p>
+          Nous avons alloué <strong>4GO de mémoire vive</strong> à la machine afin de garantir une performance fluide de l'OS, et de supporter
+          l’utilisation d’Apache et de WebStorm. Concernant les processeurs, <strong>4 cœurs</strong> sont utilisés afin de répartir au mieux les tâches en plusieurs threads.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 : Stockage alloué -->
+  <section class="mt-5">
+    <h2>Stockage alloué</h2>
+    <p>
+      Pour garantir un espace suffisant pour les fichiers et l’OS, nous avons réservé <strong>20 Gio de stockage</strong> à la machine.
+    </p>
+    <figure class="text-center">
+      <img src="../img/Capture d'écran 2025-01-19 040016.png" alt="Configuration du stockage" class="img-fluid">
+    </figure>
+  </section>
+
+  <!-- Section 3 : Accès réseau par pont -->
+  <section class="mt-5">
+    <h2>Accès réseau par pont</h2>
+    <p>
+      L’avantage d’avoir une VM en accès par pont est qu’elle est considérée comme une machine unique ayant une <strong>adresse IP spécifique</strong>,
+      permettant ainsi d'accéder à la machine depuis un autre appareil. Contrairement au mode NAT, qui partage l’IP de notre PC avec la VM.
+    </p>
+    <figure class="text-center">
+      <img src="../img/Capture d'écran 2025-01-19 042728.png" alt="Configuration réseau en mode accès par pont" class="img-fluid">
+    </figure>
+  </section>
+</main>
+
+<!-- Pied de page -->
+<footer>
+  <p>&copy; 2025 Projet SAE. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
